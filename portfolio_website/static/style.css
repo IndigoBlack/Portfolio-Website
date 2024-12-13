@@ -1,0 +1,225 @@
+
+ /*Global styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header styles*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    border: 0.5px solid none;
+    box-shadow: 3px 3px 5px gray;
+    height: 70px;
+    padding: 5px 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#portfolio-heading {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+#nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+}
+
+#nav-links .btn {
+    transition: all 0.3s ease;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#nav-links a:hover {
+    color: #0056b3;
+}
+
+/* Home page styles*/
+#intro {
+    text-align: center;
+    margin-top: 120px;
+    padding: 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+ /*About page styles*/
+#about {
+    text-align: center;
+    margin-top: 120px;
+    padding: 20px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+ /*Projects page styles*/
+.project-heading {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project {
+    flex: 1 1 300px;
+    min-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project .btn {
+    width: 100px;
+}
+
+ /*Contact page styles*/
+.contact-heading {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#contact-me {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+ /*Responsive styles*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #portfolio-heading {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    #nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #intro, #about {
+        margin-top: 150px;
+        padding: 15px;
+    }
+
+    .project {
+        flex: 1 1 100%;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #portfolio-heading {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    #intro, #about {
+        font-size: 0.9rem;
+    }
+}
+

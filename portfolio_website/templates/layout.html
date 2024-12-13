@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Personal Portfolio</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <h2 id="portfolio-heading">Mamello Molokwane's portfolio</h2>
+            <nav id="nav-links">
+                <a href="https://www.linkedin.com/in/mamello-molokwane-2b3b04213/" target="_blank">
+                    <i class="fab fa-linkedin">Linkedin</i>
+                </a>
+                <i class="fas fa-envelope">mamellomolokwane10@gmail.com</i>
+                <button class="btn btn-outline-primary"><a href="/" class="home-link">Home</a></button>
+                <button class="btn btn-outline-primary"><a href="/about" class="about-link">About</a></button>
+                <button class="btn btn-outline-primary"><a href="/projects" class="project-link">Projects</a></button>
+                <button class="btn btn-outline-primary"><a href="{{ url_for('static', filename='Resume.pdf') }}" target="_blank">View Resume</a></button>
+                <button class="btn btn-outline-secondary"><a href="{{ url_for('static', filename='Resume.pdf') }}" download>Download Resume</a></button>
+            </nav>
+        </header>
+       {% block body %}
+       {% endblock %}
+       <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
