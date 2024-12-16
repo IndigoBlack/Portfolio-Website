@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-This project is a personal portfolio website created with Flask, showcasing my software development skills, projoects, and contact information
+This project is a personal portfolio website created with Flask, showcasing my software development skills, projects, and contact information
 
 ## Features
 - **Home Page**: A welcoming page introducing the developer, skills, and interests.
