@@ -32,9 +32,10 @@ def projects():
             "url": "https://github.com/IndigoBlack/Displayed-projects/blob/main/script.js"
         },
         {
-            "name": "Project 3",
-            "description": "Description of project 3",
-            "url": "Insert url to project 3"
+            "name": "Portfolio Website",
+            "description": """A portfolio website consisting of all the projects I 
+            completed and uploaded to a public repository. This is the website""",
+            "url": "https://github.com/IndigoBlack/Portfolio-Website"
         },
     ]
     return render_template("projects.html", projects=projects)
@@ -44,4 +45,4 @@ def resume():
     return render_template("resume.html")
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
