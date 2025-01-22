@@ -7,7 +7,7 @@ function About() {
     const Javascript = <a href="https://www.credly.com/badges/6ede6d12-e6e5-4ddc-b893-53f28bbde155/public_url" target="_blank">Javascript</a>
     const Python = <a href="https://www.credly.com/badges/bbc67a6d-ce60-40b4-b4a7-e441bfe63aa9/public_url" target="_blank">Python</a>
     return (
-    <section>
+    <section id='about'>
         <h3>About Me</h3>
         <p>A little about me. I am an aspiring software developer that is passionate about building and maintaining software.
         I've build many projects in {CS50X}, and {CS50P} in HTML, CSS, Javascript, 
