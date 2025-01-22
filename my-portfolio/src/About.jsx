@@ -12,8 +12,8 @@ function About() {
         <p>A little about me. I am an aspiring software developer that is passionate about building and maintaining software.
         I've build many projects in {CS50X}, and {CS50P} in HTML, CSS, Javascript, 
         Python and Flask, and also some personal projects in those languages and frameworks as well as Django. 
-        I've also obtained internationally accredited Certiport certificates in { HTML_CSS }, {Javascript}, and {Python} 
-         I'm someone who always aims to get the job done and always looking to learn and improve.</p>
+        I've also obtained internationally accredited Certiport certificates in { HTML_CSS }, {Javascript}, and {Python}. 
+        I'm someone who always aims to get the job done and always looking to learn and improve.</p>
     </section>
     )
 }
