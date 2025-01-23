@@ -5,10 +5,10 @@ function Projects() {
     const projects = [
         {
             id: 1,
-            name: "Project 1",
-            description: "Project description",
-            code: "Link to code",
-            website: "Link to website",
+            name: "Pokedex: A JavaScript Application",
+            description: "This is a simple Pokedex application built with HTML, CSS, and JavaScript. It fetches data from the PokeAPI to display Pokemon information and allows searching by name.",
+            code: "https://github.com/IndigoBlack/Displayed-projects/blob/main/script.js",
+            website: "https://personal-pokedex.netlify.app/",
         },
         {
             id: 2,
@@ -35,7 +35,7 @@ function Projects() {
     const projectList = projects.map(project => <li key={project.id}>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
-        <a href={project.code}>Code</a> | <a href={project.website}>Website</a>
+        <a href={project.code} target='_blank'>Code</a> | <a href={project.website} target='_blank'>Website</a>
     </li>)
     return (
         <section id='projects'>
