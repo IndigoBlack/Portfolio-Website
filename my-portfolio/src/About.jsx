@@ -1,19 +1,31 @@
 import React from 'react'
 
 function About() {
-    const HTML_CSS = <a href="https://www.credly.com/badges/6e4404bb-deda-4b26-8868-02eb2ff38383/public_url" target="_blank">HTML and CSS</a>
-    const CS50X = <a href="https://cs50.harvard.edu/certificates/380821d4-d35b-459a-8a65-c2b27a95f1e4" target="_blank">CS50X</a>
-    const CS50P = <a href="https://cs50.harvard.edu/certificates/b74f7b2d-c762-42ac-83c9-2879db5c0416" target="_blank">CS50P</a>
-    const Javascript = <a href="https://www.credly.com/badges/6ede6d12-e6e5-4ddc-b893-53f28bbde155/public_url" target="_blank">Javascript</a>
-    const Python = <a href="https://www.credly.com/badges/bbc67a6d-ce60-40b4-b4a7-e441bfe63aa9/public_url" target="_blank">Python</a>
+    const certifications = [
+        <a href="https://www.credly.com/badges/6e4404bb-deda-4b26-8868-02eb2ff38383/public_url" target="_blank">Certiport IT specialist - HTML and CSS</a>,
+        <a href="https://www.credly.com/badges/6ede6d12-e6e5-4ddc-b893-53f28bbde155/public_url" target="_blank">Certiport IT specialist - Javascript</a>,
+        <a href="https://www.credly.com/badges/bbc67a6d-ce60-40b4-b4a7-e441bfe63aa9/public_url" target="_blank">Certiport IT specialist - Python</a>,
+        <a href="https://cs50.harvard.edu/certificates/380821d4-d35b-459a-8a65-c2b27a95f1e4" target="_blank">Harvard's CS50X</a>,
+        <a href="https://cs50.harvard.edu/certificates/b74f7b2d-c762-42ac-83c9-2879db5c0416" target="_blank"> Harvard's CS50P</a>,
+    ]
+    const certificationsList = certifications.map(certificates => <li>{certificates}</li>)
     return (
     <section id='about'>
         <h3>About Me</h3>
-        <p>A little about me. I am an aspiring software developer that is passionate about building and maintaining software.
-        I've build many projects in {CS50X}, and {CS50P} in HTML, CSS, Javascript, 
-        Python and Flask, and also some personal projects in those languages and frameworks as well as Django. 
-        I've also obtained internationally accredited Certiport certificates in { HTML_CSS }, {Javascript}, and {Python}. 
-        I'm someone who always aims to get the job done and always looking to learn and improve.</p>
+        <p className='about-me'>I'm a passionate software developer eager to contribute to innovative
+            projects. While my professional journey is just beginning, I've dedicated
+            myself to building a strong foundation in software development through
+            hands-on projects and continuous learning. This portfolio showcases my
+            skills in Python, JavaScript, React, Django and Flask and demonstrates my
+            ability to tackle challenging problems with creative solutions. I'm quick
+            learner, thrive in collaborative environments, and I'm excited to bring my
+            enthusiasm and dedication to a dynamic team. I'm always looking for opportunities
+            to expand my knowledge and contribute meaningfully to real-world projects.
+        </p>
+        <h3>Certification</h3>
+        <ul className='certificates'>
+            {certificationsList}
+        </ul>
     </section>
     )
 }

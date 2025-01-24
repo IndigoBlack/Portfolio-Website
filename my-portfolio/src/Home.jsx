@@ -5,7 +5,7 @@ function Home() {
     return (
         <section id='home'>
             <header>
-                <nav id='navbar'>
+                <nav id='nav-bar'>
                     <a href='#home'>Home </a> 
                     <a href='#about'> About </a>
                     <a href='#projects'>Projects </a>
@@ -14,7 +14,7 @@ function Home() {
                     <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer"> Resume</a>
                 </nav>
             </header>
-            <h2>Welcome to my Portfolio Website</h2>
+            <h2 className='greeting'>Welcome to my Portfolio Website</h2>
             
         </section>
     )
