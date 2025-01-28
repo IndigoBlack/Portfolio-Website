@@ -1,6 +1,6 @@
 [build]
   command = "npm run build" # Or "vite build" if you use that command
-  publish = "my-portfolio"
+
 
 [[redirects]]
   from = "/*"
