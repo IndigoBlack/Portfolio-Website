@@ -12,9 +12,9 @@ function Projects() {
         },
         {
             id: 2,
-            name: "Project 2",
-            description: "Project description",
-            code: "Link to code",
+            name: "Wiki Summariser",
+            description: "This is a Django web application that allows users to search for Wikipedia articles on a topic of their choice. Once an article is selected, the application fetches the introductory section (overview) of the article and summarizes it using a Hugging Face Transformers model (specifically, a summarization pipeline). The user is then presented with the summarized text along with a link to the full Wikipedia page.",
+            code: "https://github.com/IndigoBlack/Wiki-Summariser-web",
             website: "Link to website",
         },
         {
