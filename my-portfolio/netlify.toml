@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build" # Or "vite build" if you use that command
+  command = "vite build" # Or "vite build" if you use that command
 
 
 [[redirects]]
