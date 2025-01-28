@@ -8,24 +8,28 @@ function About() {
         <a href="https://cs50.harvard.edu/certificates/380821d4-d35b-459a-8a65-c2b27a95f1e4" target="_blank">Harvard's CS50X</a>,
         <a href="https://cs50.harvard.edu/certificates/b74f7b2d-c762-42ac-83c9-2879db5c0416" target="_blank"> Harvard's CS50P</a>,
     ]
-    const certificationsList = certifications.map(certificates => <li>{certificates}</li>)
+    const certificationsList = certifications.map(certificates => <li className='certificates'>{certificates}</li>)
     return (
-    <section id='about'>
+    <section id='about' className='section fade-in'>
+        <div className="container">
         <h3>About Me</h3>
         <p className='about-me'>I'm a passionate software developer eager to contribute to innovative
             projects. While my professional journey is just beginning, I've dedicated
             myself to building a strong foundation in software development through
             hands-on projects and continuous learning. This portfolio showcases my
             skills in Python, JavaScript, React, Django and Flask and demonstrates my
-            ability to tackle challenging problems with creative solutions. I'm quick
-            learner, thrive in collaborative environments, and I'm excited to bring my
+            ability to tackle challenging problems with creative solutions. I'm a quick
+            learner, I thrive in collaborative environments, and I'm excited to bring my
             enthusiasm and dedication to a dynamic team. I'm always looking for opportunities
             to expand my knowledge and contribute meaningfully to real-world projects.
         </p>
-        <h3>Certification</h3>
-        <ul className='certificates'>
-            {certificationsList}
-        </ul>
+        <div className='certificate-container'>
+            <h3>Certificates</h3>
+            <ul className='certificates-list'>
+                {certificationsList}
+            </ul>
+        </div>
+        </div>
     </section>
     )
 }
