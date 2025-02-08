@@ -10,7 +10,7 @@ function Home() {
                     <a href='#about'> About </a>
                     <a href='#projects'>Projects </a>
                     <a href='#contact'>Contact Me</a>
-                    <a href="/My Resume.pdf" target="_blank" rel="noopener noreferrer"> Resume</a>
+                    <a href="/C.V.pdf" target="_blank" rel="noopener noreferrer"> Resume</a>
                 </nav>
                 <h1 className='greeting'>Hi, my name is Mamello Molokwane</h1>
                 </div>
