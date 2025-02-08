@@ -12,6 +12,7 @@ function About() {
     return (
     <section id='about' className='section fade-in'>
         <div className="container">
+        <img alt='Profile picture' src='/IMG-20241113-WA0002.jpg' className='circle-image'></img>
         <h3>About Me</h3>
         <p className='about-me'>I'm a passionate software developer eager to contribute to innovative
             projects. While my professional journey is just beginning, I've dedicated
