@@ -12,10 +12,10 @@ function Projects() {
         },
         {
             id: 2,
-            name: "Wiki Summariser",
-            description: "This is a Django web application that allows users to search for Wikipedia articles on a topic of their choice. Once an article is selected, the application fetches the introductory section (overview) of the article and summarizes it using a Hugging Face Transformers model (specifically, a summarization pipeline). The user is then presented with the summarized text along with a link to the full Wikipedia page.",
-            code: "https://github.com/IndigoBlack/Wiki-Summariser-web",
-            website: "Link to website",
+            name: "Flashcards",
+            description: "This is a simple web application for creating and studying flashcards. Users can create flashcards with a title, question, and answer, and then review them in a randomized order. The app tracks the user's progress by allowing them to mark cards as 'known' or 'unknown.'",
+            code: "https://github.com/IndigoBlack/JavaScript-projects",
+            website: "https://javascript-projects-xklj.onrender.com/",
         },
         {
             id: 3,
