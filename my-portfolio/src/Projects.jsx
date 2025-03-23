@@ -38,7 +38,7 @@ function Projects() {
         },
         {
             id: 6,
-            name: "Simple Flask To-Do",
+            name: "Flask To-Do",
             description: "A simple Task manager app to create, delete a task. The tasks are saved to a sqlite database. The project is not finished as I have not styled it yet",
             code: "https://github.com/IndigoBlack/Flask-projects/tree/main/Flask-Todo"
         },
