@@ -224,6 +224,10 @@ header {
   }
 }
 
+/* About Me*/
+.about-me {
+  text-align: center;
+}
 
 /* Contact */
 .social-links {
